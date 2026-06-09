@@ -32,16 +32,17 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container hero-panel">
         <div class="hero-card">
           <p class="eyebrow">Hello, I'm</p>
           <h1 class="hero-name" id="heroName">Maheendra Menon</h1>
           <p class="hero-subtitle">A creative web designer who builds animated, polished websites with personality and thoughtful detail.</p>
-          <p class="hero-actions">
-            <a class="btn" href="#projects">See my work</a>
-            <a class="btn ghost" href="#contact">Contact me</a>
-          </p>
+          <div class="hero-actions">
+            <a class="btn reveal-link" href="#hero">See my profile</a>
+            <a class="btn ghost reveal-link" href="#contact">Contact me</a>
+          </div>
+          <div class="hero-hint">Scroll down to explore the full profile</div>
         </div>
         <div class="hero-decor" aria-hidden="true"></div>
       </div>
@@ -128,13 +129,26 @@
 
         event.preventDefault();
         showPortfolio();
-        setTimeout(() => scrollToSection(href), 120);
+        setTimeout(() => scrollToSection(href), 150);
       });
     });
 
     const heroName = document.getElementById('heroName');
-    heroName.addEventListener('click', showPortfolio);
-    heroName.addEventListener('touchend', showPortfolio);
+    heroName.addEventListener('click', () => {
+      showPortfolio();
+      setTimeout(() => scrollToSection('#hero'), 150);
+    });
+    heroName.addEventListener('touchend', () => {
+      showPortfolio();
+      setTimeout(() => scrollToSection('#hero'), 150);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      if (location.hash) {
+        showPortfolio();
+        setTimeout(() => scrollToSection(location.hash), 200);
+      }
+    });
   </script>
 </body>
 </html>
