@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maheendra Menon — Designer</title>
+  <title>Maheendra Menon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
           <div class="avatar-small">MM</div>
           <div class="brand-text">
             <h1 class="name">Maheendra Menon</h1>
-            <p class="role">Designer & Web Developer</p>
+            <p class="role">Designer • Developer</p>
           </div>
         </div>
       </div>
@@ -35,18 +35,17 @@
   <main>
     <section id="hero" class="hero">
       <div class="container hero-panel">
-        
         <div class="hero-content-wrapper">
           
           <div class="hero-card">
-            <p class="eyebrow">Hello, I'm</p>
-            <h1 class="hero-name" id="heroName">Maheendra Menon</h1>
-            <p class="hero-subtitle">A creative web designer who builds animated, polished websites with personality and thoughtful detail.</p>
+            <p class="eyebrow">Web Designer • Web Developer</p>
+            <h1 class="hero-name" id="heroName">Maheendra Menon.</h1>
+            <p class="hero-subtitle">I build websites that prioritize speed, clean architecture, and fluid user experiences. I don't believe in over-complicating things—I just believe in doing them right.</p>
             <div class="hero-actions">
-              <a class="btn reveal-link" href="#about" id="revealBtn">See my profile</a>
-              <a class="btn ghost reveal-link" href="#contact">Contact me</a>
+              <a class="btn reveal-link" href="#about" id="revealBtn">Let's talk shop.</a>
+              <a class="btn ghost reveal-link" href="#contact">Get in touch.</a>
             </div>
-            <div class="hero-hint">Click above to explore full profile</div>
+            <div class="hero-hint">Click above to explore.</div>
           </div>
 
           <div class="hero-image-box">
@@ -62,17 +61,23 @@
     </section>
 
     <div class="main-content" id="mainContent">
+      <div class="profile-main-header container">
+        <div class="profile-main-avatar-frame">
+          <img src="me.jpeg" alt="Maheendra Menon" class="profile-main-avatar">
+        </div>
+      </div>
+
       <section id="about" class="about container">
-        <h3>About</h3>
-        <p>Born on 13 October 2007 and currently studying at TocH Institute of Science and Technology in Ernakulam, I love creating websites. I don't like plain pages — I always try to build sites with fluid animations and strong, modern design.</p>
+        <h3>Building for the future.</h3>
+        <p>I’m a developer based in Ernakulam, currently studying at TocH Institute of Science and Technology. I’ve always been drawn to the intersection of clean design and efficient code. I don't just build pages; I focus on creating digital experiences that feel fast, responsive, and intuitive.</p>
       </section>
 
       <section id="projects" class="projects container">
         <h3>Projects</h3>
         <div class="project-grid">
           <article class="project">
-            <h4>Car Showcase Website</h4>
-            <p>I created a website for a car business with polished visuals, smooth transitions, and easy navigation. The design highlights each vehicle while keeping the experience clean and engaging.</p>
+            <h4>Car Showcase (Personal Project)</h4>
+            <p>This was a passion project—a deep dive into performance optimization and high-fidelity UI design. It taught me how to balance complex animation states with lightning-fast load times.</p>
             <p class="project-links"><a href="#">Live demo</a> · <a href="#">Source</a></p>
           </article>
         </div>
@@ -83,111 +88,62 @@
         <div class="experience-grid">
           <article class="experience-card">
             <h4>Student Web Developer</h4>
-            <p>I have completed my first year of college and already built websites that focus on animation and polished design. I want to become a web developer and I keep working hard to improve with every project.</p>
+            <p>Currently pursuing a B.Tech degree at TocH Institute of Science and Technology, focusing on building high-performance web interfaces.</p>
           </article>
-
           <article class="experience-card">
             <h4>Education</h4>
-            <p>Pursuing a B.Tech degree at TocH Institute of Science and Technology in Ernakulam, with expected completion in 2029.</p>
+            <p>B.Tech in Computer Science, TocH Institute of Science and Technology. Expected graduation: 2029.</p>
           </article>
         </div>
       </section>
 
       <section id="skills" class="skills container">
-        <h3>Skills</h3>
+        <h3>My Toolkit</h3>
+        <p>I prefer a focused, high-performance tech stack:</p>
         <ul class="skill-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Web Design</li>
-          <li>Animations</li>
-          <li>Responsive Layouts</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>UI/UX Principles</li>
+          <li>Responsive Design</li>
+          <li>Performance Optimization</li>
         </ul>
       </section>
 
       <section id="contact" class="contact container">
         <h3>Contact</h3>
-        <p>If you'd like to get in touch, email me at <a href="mailto:maheendramenon@gmail.com">maheendramenon@gmail.com</a>. I'm based in Ernakulam and available for web design work and internships.</p>
+        <p>If you'd like to get in touch, email me at <a href="mailto:maheendramenon@gmail.com">maheendramenon@gmail.com</a>.</p>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Maheendra Menon — Built with a starter template.</p>
+      <p>© <span id="year"></span> Maheendra Menon.</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Toggle reveal canvas state properties
-    const showPortfolio = () => {
-      document.body.classList.add('show-content');
-    };
-
-    const hidePortfolio = () => {
-      document.body.classList.remove('show-content');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    // Frame-perfect navigation scrolling offset rules
+    const showPortfolio = () => document.body.classList.add('show-content');
+    const hidePortfolio = () => { document.body.classList.remove('show-content'); window.scrollTo({ top: 0, behavior: 'smooth' }); };
     const scrollToSection = (targetId) => {
       const target = document.querySelector(targetId);
       if (!target) return;
-      const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 110;
+      const offsetTop = targetId === '#about' ? document.getElementById('mainContent').offsetTop - 90 : target.getBoundingClientRect().top + window.pageYOffset - 110;
       window.scrollTo({ top: Math.max(offsetTop, 0), behavior: 'smooth' });
     };
 
-    // Primary Call to Action Click Reveal Event Trigger
-    const revealBtn = document.getElementById('revealBtn');
-    if (revealBtn) {
-      revealBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        showPortfolio();
-        setTimeout(() => scrollToSection('#about'), 350); 
-      });
-    }
-
-    // Secondary header navigation routing loops
-    const anchorLinks = document.querySelectorAll('.nav a, .hero-actions a.ghost');
-    anchorLinks.forEach(link => {
+    document.getElementById('revealBtn')?.addEventListener('click', (e) => { e.preventDefault(); showPortfolio(); setTimeout(() => scrollToSection('#about'), 350); });
+    document.querySelectorAll('.nav a, .hero-actions a.ghost').forEach(link => {
       link.addEventListener('click', event => {
         const href = link.getAttribute('href');
         if (!href || href === '#' || href === '#hero') return;
-        
-        event.preventDefault();
-        showPortfolio();
-        setTimeout(() => scrollToSection(href), 350);
+        event.preventDefault(); showPortfolio(); setTimeout(() => scrollToSection(href), 350);
       });
     });
-
-    // Landing screen primary title trigger mechanics
-    const heroName = document.getElementById('heroName');
-    const handleNameClick = () => {
-      showPortfolio();
-      setTimeout(() => scrollToSection('#about'), 350);
-    };
-    if (heroName) {
-      heroName.addEventListener('click', handleNameClick);
-      heroName.addEventListener('touchend', handleNameClick);
-    }
-
-    // Top Brand Reset Loop listener (brings curtain overlay back down smoothly)
-    const brandReset = document.getElementById('brandReset');
-    if (brandReset) {
-      brandReset.addEventListener('click', () => {
-        hidePortfolio();
-      });
-    }
-
-    // Fallback security monitoring for native bookmark hashes
-    window.addEventListener('DOMContentLoaded', () => {
-      if (location.hash && location.hash !== '#hero') {
-        showPortfolio();
-        setTimeout(() => scrollToSection(location.hash), 400);
-      }
-    });
+    document.getElementById('heroName')?.addEventListener('click', () => { showPortfolio(); setTimeout(() => scrollToSection('#about'), 350); });
+    document.getElementById('brandReset')?.addEventListener('click', hidePortfolio);
   </script>
 </body>
 </html>
