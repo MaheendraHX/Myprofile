@@ -50,7 +50,7 @@
 
           <div class="hero-image-box">
             <div class="hero-image-frame">
-              <img src="me.jpeg" alt="Maheendra Menon" class="hero-avatar" onerror="this.parentNode.classList.add('\''fallback-active'\'');">
+              <img src="assets/profile.jpg" alt="Maheendra Menon" class="hero-avatar" onerror="this.style.display='\''none'\'\';">
               <div class="avatar-fallback-glow"></div>
             </div>
           </div>
@@ -61,13 +61,6 @@
     </section>
 
     <div class="main-content" id="mainContent">
-      
-      <div class="profile-main-header container">
-        <div class="profile-main-avatar-frame">
-          <img src="me.jpeg" alt="Maheendra Menon" class="profile-main-avatar">
-        </div>
-      </div>
-
       <section id="about" class="about container">
         <h3>About</h3>
         <p>Born on 13 October 2007 and currently studying at TocH Institute of Science and Technology in Ernakulam, I love creating websites. I don'\''t like plain pages — I always try to build sites with fluid animations and strong, modern design.</p>
@@ -127,6 +120,7 @@
   <script>
     document.getElementById('\''year'\'').textContent = new Date().getFullYear();
 
+    // Toggle reveal wrapper layout classes
     const showPortfolio = () => {
       document.body.classList.add('\''show-content'\'');
     };
@@ -136,19 +130,15 @@
       window.scrollTo({ top: 0, behavior: '\''smooth'\'' });
     };
 
-    // Adjusted scrolling offset rule to center nicely with the new image header
+    // Frame-perfect scrolling offset calculations
     const scrollToSection = (targetId) => {
       const target = document.querySelector(targetId);
       if (!target) return;
-      
-      // If going to about, scroll to the top of the content track to see the image perfectly
-      const offsetTop = targetId === '\''#about'\'' 
-        ? document.getElementById('\''mainContent'\'').offsetTop - 90
-        : target.getBoundingClientRect().top + window.pageYOffset - 110;
-        
+      const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 110;
       window.scrollTo({ top: Math.max(offsetTop, 0), behavior: '\''smooth'\'' });
     };
 
+    // See My Profile Button Reveal Trigger
     const revealBtn = document.getElementById('\''revealBtn'\'');
     if (revealBtn) {
       revealBtn.addEventListener('\''click'\'', (e) => {
@@ -158,6 +148,7 @@
       });
     }
 
+    // Top Navigation Link Event Listeners
     const anchorLinks = document.querySelectorAll('\''.nav a, .hero-actions a.ghost'\'');
     anchorLinks.forEach(link => {
       link.addEventListener('\''click'\'', event => {
@@ -170,6 +161,7 @@
       });
     });
 
+    // Big Hero Title Interactive Click Trigger
     const heroName = document.getElementById('\''heroName'\'');
     const handleNameClick = () => {
       showPortfolio();
@@ -180,17 +172,21 @@
       heroName.addEventListener('\''touchend'\'', handleNameClick);
     }
 
+    // Interactive Brand Reset Loop Action (Pulls curtain back down)
     const brandReset = document.getElementById('\''brandReset'\'');
     if (brandReset) {
-      brandReset.addEventListener('\''click'\'', () => {
+      brandReset.addEventListener('\''click'\'', (e) => {
         hidePortfolio();
       });
     }
 
+    // Anchor hash link bookmark routing safety fallback
     window.addEventListener('\''DOMContentLoaded'\'', () => {
       if (location.hash && location.hash !== '\''#hero'\'') {
         showPortfolio();
         setTimeout(() => scrollToSection(location.hash), 400);
+      } else if (location.hash === '\''#hero'\'') {
+        history.replaceState(null, null, '\'' '\'');
       }
     });
   </script>
