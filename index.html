@@ -114,9 +114,10 @@
 
     const scrollToSection = (targetId) => {
       const target = document.querySelector(targetId);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (!target) return;
+
+      const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 120;
+      window.scrollTo({ top: Math.max(offsetTop, 0), behavior: 'smooth' });
     };
 
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -129,18 +130,18 @@
 
         event.preventDefault();
         showPortfolio();
-        setTimeout(() => scrollToSection(href), 150);
+        setTimeout(() => scrollToSection(href), 200);
       });
     });
 
     const heroName = document.getElementById('heroName');
     heroName.addEventListener('click', () => {
       showPortfolio();
-      setTimeout(() => scrollToSection('#hero'), 150);
+      setTimeout(() => scrollToSection('#hero'), 200);
     });
     heroName.addEventListener('touchend', () => {
       showPortfolio();
-      setTimeout(() => scrollToSection('#hero'), 150);
+      setTimeout(() => scrollToSection('#hero'), 200);
     });
 
     window.addEventListener('DOMContentLoaded', () => {
