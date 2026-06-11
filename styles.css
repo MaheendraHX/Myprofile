@@ -67,7 +67,7 @@ body.show-content {
   position: relative;
   overflow: hidden;
   /* Updated to use your new Green/Beige theme */
-  background: linear-gradient(180deg, rgba(10, 20, 16, 0.98), rgba(5, 10, 8, 0.99));
+ background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
   border-radius: 32px;
   padding: 64px 48px;
   box-shadow: 0 40px 120px rgba(0, 0, 0, 0.55);
