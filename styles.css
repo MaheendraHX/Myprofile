@@ -1,14 +1,14 @@
 ﻿:root {
-  /* Forest Green Theme */
-  --bg-1: #0a1410;        /* Deep Forest Green */
-  --bg-2: #050a08;        /* Near Black-Green */
-  --panel: rgba(232, 225, 213, 0.03);
-  --card: #111a16;
-  --text: #e8e1d5;        /* Soft Beige text */
-  --muted: #8a9992;       /* Muted Green-Grey */
-  --accent-1: #c5a059;    /* Muted Gold */
-  --accent-2: #d4b483;    /* Lighter Gold */
-  --glass: rgba(232, 225, 213, 0.04);
+  /* Lush Forest Theme (Brighter & More Visible) */
+  --bg-1: #1a2a24;        /* Dark forest, but with visible green undertones */
+  --bg-2: #0f1c17;        /* A softer, deeper green, not pure black */
+  --panel: rgba(232, 225, 213, 0.05); /* Slightly more visible panel */
+  --card: #1d332b;        /* Lighter card color for contrast */
+  --text: #e8e1d5;        
+  --muted: #a3b3ac;       /* Brighter muted text */
+  --accent-1: #d4af37;    /* Richer Gold */
+  --accent-2: #e5c158;    /* Brighter Gold highlight */
+  --glass: rgba(232, 225, 213, 0.06);
   --radius: 14px;
   --gap: 24px;
 }
