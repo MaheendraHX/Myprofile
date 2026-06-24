@@ -1,12 +1,12 @@
 :root {
-  --bg-1: #1c0b0b;
-  --bg-2: #0f0505;
+  --bg-1: #090b10;
+  --bg-2: #050608;
   --panel: rgba(255, 255, 255, 0.03);
-  --card: #261010;
-  --text: #fceded;
-  --muted: #c9aaaa;
-  --accent-1: #ff2a2a;
-  --accent-2: #ff7373;
+  --card: #0f1219;
+  --text: #f0f4ff;
+  --muted: #8b99b5;
+  --accent-1: #2563eb;
+  --accent-2: #8b5cf6;
   --glass: rgba(255, 255, 255, 0.04);
   --radius: 14px;
   --gap: 24px;
@@ -14,8 +14,8 @@
 
 body {
   font-family: Inter, system-ui, -apple-system, sans-serif;
-  background: radial-gradient(800px 400px at 10% 10%, rgba(255, 42, 42, 0.12), transparent),
-              radial-gradient(600px 300px at 90% 90%, rgba(255, 115, 115, 0.08), transparent),
+  background: radial-gradient(800px 400px at 10% 10%, rgba(37, 99, 235, 0.12), transparent),
+              radial-gradient(600px 300px at 90% 90%, rgba(139, 92, 246, 0.08), transparent),
               linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -60,7 +60,7 @@ body.show-content {
   border-radius: 32px;
   padding: 64px 48px;
   box-shadow: 0 40px 120px rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(232, 225, 213, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;
   max-width: 1100px;
 }
@@ -93,7 +93,7 @@ body.show-content .hero {
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, rgba(255, 42, 42, 0.15), rgba(255, 115, 115, 0.1));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.1));
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 
@@ -108,7 +108,7 @@ body.show-content .hero {
 .avatar-fallback-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 42, 42, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.35) 0%, transparent 70%);
   animation: fallbackPulse 3s infinite ease-in-out;
   display: none;
 }
@@ -165,11 +165,11 @@ section[id] { scroll-margin-top: 110px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(15, 28, 23, 0.85);
+  background: rgba(5, 6, 8, 0.85);
   backdrop-filter: blur(12px);
   padding: 8px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(232, 225, 213, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .brand { transition: opacity 0.2s ease; }
@@ -194,7 +194,7 @@ section[id] { scroll-margin-top: 110px; }
   letter-spacing: -1px;
   color: #fff;
   cursor: pointer;
-  text-shadow: 0 0 20px rgba(255, 42, 42, 0.25);
+  text-shadow: 0 0 20px rgba(37, 99, 235, 0.25);
 }
 .hero-card { position: relative; z-index: 2; max-width: 580px; }
 .hero .eyebrow {
@@ -220,11 +220,11 @@ section[id] { scroll-margin-top: 110px; }
   justify-content: center;
   padding: 14px 24px;
   background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-  color: #1a1a1a;
+  color: #fff;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 12px 30px rgba(12,16,26,0.5);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
   transition: transform .25s, filter .25s;
 }
 .btn:hover { transform: translateY(-3px); filter: brightness(1.1); }
@@ -268,14 +268,14 @@ section[id] { scroll-margin-top: 110px; }
   height: 360px;
   left: -6%;
   top: -40%;
-  background: radial-gradient(circle, rgba(255, 42, 42, 0.5), transparent 60%);
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.5), transparent 60%);
 }
 .hero-decor::after {
   width: 420px;
   height: 420px;
   right: -8%;
   bottom: -32%;
-  background: radial-gradient(circle, rgba(255, 115, 115, 0.4), transparent 60%);
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.4), transparent 60%);
 }
 
 .about h3, .projects h3, .experience h3, .skills h3, .contact h3 {
@@ -307,14 +307,14 @@ section[id] { scroll-margin-top: 110px; }
   padding: 24px;
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.04);
-  box-shadow: 0 14px 40px rgba(2,6,23,0.5);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.3);
   transition: transform .3s ease, background .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 .project:hover, .experience-card:hover {
   transform: translateY(-6px);
   background: rgba(255,255,255,0.04);
   border-color: var(--accent-2);
-  box-shadow: 0 20px 40px rgba(255, 42, 42, 0.15);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
 }
 
 .project-links a { color: var(--accent-2); text-decoration: none; font-weight: 600; }
@@ -326,9 +326,9 @@ section[id] { scroll-margin-top: 110px; }
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 99px;
-  background: rgba(255, 42, 42, 0.15);
+  background: rgba(37, 99, 235, 0.15);
   color: var(--accent-2);
-  border: 1px solid rgba(255, 42, 42, 0.3);
+  border: 1px solid rgba(37, 99, 235, 0.3);
   vertical-align: middle;
   margin-left: 8px;
   letter-spacing: 0.04em;
@@ -346,7 +346,7 @@ section[id] { scroll-margin-top: 110px; }
   background: var(--card);
   padding: 20px;
   border-radius: var(--radius);
-  border: 1px solid rgba(232, 225, 213, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text);
   font-weight: 600;
   text-align: center;
@@ -391,7 +391,7 @@ section[id] { scroll-margin-top: 110px; }
 .contact-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent-2);
-  box-shadow: 0 16px 40px rgba(255, 42, 42, 0.15);
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.15);
   background: rgba(255,255,255,0.05);
 }
 
@@ -428,9 +428,9 @@ section[id] { scroll-margin-top: 110px; }
   border: 1px solid rgba(225, 48, 108, 0.2);
 }
 .github-icon {
-  background: rgba(232, 225, 213, 0.08);
-  color: #e8e1d5;
-  border: 1px solid rgba(232, 225, 213, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .contact-info {
@@ -478,7 +478,7 @@ section[id] { scroll-margin-top: 110px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1a1a1a;
+  color: #fff;
   font-weight: 700;
   font-size: 13px;
 }
