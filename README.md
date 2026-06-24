@@ -1,6 +1,6 @@
 # Personal Portfolio — Maheendra Menon
 
-This is a minimal starter portfolio generated for `Maheendra Menon`.
+This is a Minimal starter portfolio generated for `Maheendra Menon`.
 
 How to preview locally
 
