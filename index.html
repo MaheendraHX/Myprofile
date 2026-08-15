@@ -47,6 +47,7 @@
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#languages">Languages</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </nav>
     <!-- Mobile hamburger -->
@@ -437,10 +438,91 @@
       </div>
     </section>
 
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section-screen">
+      <div class="section-inner">
+        <div class="section-label">06 — Certificates</div>
+        <h2 class="section-title">Proof that I<br><em>keep learning.</em></h2>
+        <div class="certificate-grid">
+
+          <article class="certificate-card">
+            <a class="certificate-media" href="cert-advay26.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Software Engineering 101 certificate full size">
+              <img src="cert-advay26.jpg" alt="Software Engineering 101 certificate" loading="lazy">
+            </a>
+            <div class="certificate-content">
+              <h3>Software Engineering 101</h3>
+              <p class="certificate-issuer">ADVAY Workshops · IEEE Computer Society TocH &amp; Core.ai</p>
+              <div class="certificate-footer">
+                <span class="certificate-date">Feb 13, 2026</span>
+                <a class="certificate-link" href="cert-advay26.jpg" target="_blank" rel="noopener noreferrer">View full <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <a class="certificate-media" href="cert-lifosys-aiilab.jpg" target="_blank" rel="noopener noreferrer" aria-label="View AI Industry Internship certificate full size">
+              <img src="cert-lifosys-aiilab.jpg" alt="AI Industry Internship certificate" loading="lazy">
+            </a>
+            <div class="certificate-content">
+              <h3>AI Industry Internship</h3>
+              <p class="certificate-issuer">Lifosys Digital Systems &amp; Aiilab</p>
+              <div class="certificate-footer">
+                <span class="certificate-date">Jun 3 – Jul 3, 2026</span>
+                <a class="certificate-link" href="cert-lifosys-aiilab.jpg" target="_blank" rel="noopener noreferrer">View full <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <a class="certificate-media" href="cert-tathva25.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Wireless Robotic Car workshop certificate full size">
+              <img src="cert-tathva25.jpg" alt="Wireless Robotic Car workshop certificate" loading="lazy">
+            </a>
+            <div class="certificate-content">
+              <h3>Wireless Robotic Car</h3>
+              <p class="certificate-issuer">TATHVA ’25 · NIT Calicut</p>
+              <div class="certificate-footer">
+                <span class="certificate-date">Oct 24–26, 2025</span>
+                <a class="certificate-link" href="cert-tathva25.jpg" target="_blank" rel="noopener noreferrer">View full <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <a class="certificate-media" href="cert-techfoss26.jpg" target="_blank" rel="noopener noreferrer" aria-label="View HACKLAB.exe certificate full size">
+              <img src="cert-techfoss26.jpg" alt="HACKLAB.exe Cyber Security Workshop certificate" loading="lazy">
+            </a>
+            <div class="certificate-content">
+              <h3>HACKLAB.exe: Cyber Security</h3>
+              <p class="certificate-issuer">TECHFOSS 2026 · Toc H Dept. of CSE / IEEE-CS</p>
+              <div class="certificate-footer">
+                <span class="certificate-date">Feb 27, 2026</span>
+                <a class="certificate-link" href="cert-techfoss26.jpg" target="_blank" rel="noopener noreferrer">View full <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <a class="certificate-media" href="cert-cyberverse.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Cyber Verse Blue Teaming certificate full size">
+              <img src="cert-cyberverse.jpg" alt="Cyber Verse Blue Teaming certificate" loading="lazy">
+            </a>
+            <div class="certificate-content">
+              <h3>Cyber Verse: Blue Teaming</h3>
+              <p class="certificate-issuer">IEEE Computer Society Kerala Chapter</p>
+              <div class="certificate-footer">
+                <span class="certificate-date">Jun 26, 2026</span>
+                <a class="certificate-link" href="cert-cyberverse.jpg" target="_blank" rel="noopener noreferrer">View full <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="section-screen">
       <div class="section-inner">
-        <div class="section-label">06 — Contact</div>
+        <div class="section-label">07 — Contact</div>
         <h2 class="section-title contact-headline">Let's build<br><em>something great.</em></h2>
         <p class="contact-sub">Open to freelance work, internships, and collabs. Pick your way to reach me.</p>
         <div class="contact-grid">
@@ -748,7 +830,7 @@
   /* ============================
      13. CURSOR SPOTLIGHT ON CARDS
      ============================ */
-  document.querySelectorAll('.project-card, .stat-item, .contact-card, .tech-item, .timeline-content').forEach(card => {
+  document.querySelectorAll('.project-card, .stat-item, .contact-card, .tech-item, .timeline-content, .certificate-card').forEach(card => {
     card.addEventListener('mousemove', e => {
       const r = card.getBoundingClientRect();
       card.style.setProperty('--mx', `${e.clientX - r.left}px`);

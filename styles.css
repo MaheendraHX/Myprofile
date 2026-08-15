@@ -804,7 +804,7 @@ body.show-content .main-content {
 }
 
 /* Shared spotlight definitions */
-.project-card, .stat-item, .contact-card, .tech-item, .timeline-content {
+.project-card, .stat-item, .contact-card, .tech-item, .timeline-content, .certificate-card {
   position: relative;
 }
 
@@ -812,7 +812,8 @@ body.show-content .main-content {
 .stat-item::after,
 .contact-card::after,
 .tech-item::after,
-.timeline-content::after {
+.timeline-content::after,
+.certificate-card::after {
   content: '';
   position: absolute;
   inset: -1px;
@@ -833,7 +834,8 @@ body.show-content .main-content {
 .stat-item:hover::after,
 .contact-card:hover::after,
 .tech-item:hover::after,
-.timeline-content:hover::after {
+.timeline-content:hover::after,
+.certificate-card:hover::after {
   opacity: 1;
 }
 
@@ -841,7 +843,8 @@ body.show-content .main-content {
 .stat-item > *,
 .contact-card > *,
 .tech-item > *,
-.timeline-content > * {
+.timeline-content > *,
+.certificate-card > * {
   position: relative;
   z-index: 2;
 }
@@ -1356,7 +1359,110 @@ body.show-content .main-content {
 }
 
 /* ==========================================================================
-   10. LANGUAGES SECTION
+   10. CERTIFICATES SECTION
+   ========================================================================== */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(29,51,43,0.9), rgba(15,28,23,0.8));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.certificate-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212,175,55,0.04), transparent 60%);
+  pointer-events: none;
+}
+.certificate-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212,175,55,0.35);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(212,175,55,0.1);
+}
+
+.certificate-media {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  margin: 10px 10px 0;
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  border: 1px solid rgba(212,175,55,0.12);
+}
+.certificate-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease), filter 0.6s var(--ease);
+}
+.certificate-card:hover .certificate-media img {
+  transform: scale(1.04);
+  filter: saturate(1.08);
+}
+
+.certificate-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+  padding: 20px 20px 18px;
+}
+.certificate-content h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #fff;
+}
+.certificate-issuer {
+  min-height: 2.9em;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.certificate-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.certificate-date {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s, transform 0.2s;
+}
+.certificate-link:hover {
+  color: #fff;
+  transform: translateX(2px);
+}
+
+/* ==========================================================================
+   11. LANGUAGES SECTION
    ========================================================================== */
 .lang-strip {
   display: grid;
@@ -1539,6 +1645,7 @@ body.show-content .main-content {
     grid-row: auto;
   }
   .project-grid { grid-template-columns: 1fr 1fr; }
+  .certificate-grid { grid-template-columns: 1fr 1fr; }
   .skills-layout { grid-template-columns: 1fr; gap: 40px; }
 
   .lang-strip {
@@ -1582,6 +1689,7 @@ body.show-content .main-content {
 
   .section-screen { padding: 100px 16px 60px; }
   .project-grid { grid-template-columns: 1fr; }
+  .certificate-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: 1fr 1fr; }
   .timeline-item { grid-template-columns: 20px 1fr; gap: 0 16px; }
