@@ -989,6 +989,21 @@ body.show-content .main-content {
   display: block;
 }
 
+.kevin-logo-wrap {
+  background: linear-gradient(135deg, #e8ddff, #b9a7e8);
+  border: 1px solid rgba(212,175,55,0.42);
+  box-shadow: 0 0 16px rgba(212,175,55,0.18);
+  color: #514074;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kevin-card:hover {
+  border-color: rgba(212,175,55,0.45);
+}
+
 .gesture-logo-wrap {
   background: #000;
   border: 1px solid rgba(180, 30, 50, 0.4);
