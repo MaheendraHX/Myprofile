@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Portfolio of Maheendra Menon — frontend developer crafting fluid, animated web experiences from Kerala. Obsessed with motion, design systems, and premium UI." />
-<title>Maheendra Menon — Designer & Developer</title>
+<meta name="description" content="Maheendra Menon is a student designer and frontend developer from Kerala building thoughtful, interactive web experiences." />
+<meta name="author" content="Maheendra Menon" />
+<meta name="theme-color" content="#0f1c17" />
+<link rel="canonical" href="https://maheendrahx.github.io/Portfolio/" />
+<title>Maheendra Menon — UI/UX & Frontend Developer</title>
 
 <!-- Favicon: gold M -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f1c17'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-size='20' font-weight='700' fill='%23d4af37'>M</text></svg>">
@@ -12,14 +15,17 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://maheendrahx.github.io/Portfolio/" />
-<meta property="og:title" content="Maheendra Menon — Designer & Developer" />
-<meta property="og:description" content="Frontend developer crafting fluid, animated web experiences from Kerala. Obsessed with motion, design systems, and premium UI." />
+<meta property="og:site_name" content="Maheendra Menon — Portfolio" />
+<meta property="og:title" content="Maheendra Menon — UI/UX & Frontend Developer" />
+<meta property="og:description" content="A student designer and frontend developer building thoughtful, interactive web experiences from Kerala." />
+<meta property="og:locale" content="en_IN" />
 <meta property="og:image" content="https://maheendrahx.github.io/Portfolio/me.jpeg" />
 
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Maheendra Menon — Designer & Developer" />
-<meta name="twitter:description" content="Frontend developer crafting fluid, animated web experiences from Kerala." />
+<meta name="twitter:title" content="Maheendra Menon — UI/UX & Frontend Developer" />
+<meta name="twitter:description" content="A student designer and frontend developer building thoughtful, interactive web experiences from Kerala." />
+<meta name="twitter:creator" content="@x_tr_em_er" />
 <meta name="twitter:image" content="https://maheendrahx.github.io/Portfolio/me.jpeg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,13 +40,13 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <div class="brand" id="brandReset">
+    <button class="brand" id="brandReset" type="button" aria-label="Return to the introduction">
       <div class="avatar-small">MM</div>
       <div class="brand-text">
         <span class="name">Maheendra Menon</span>
-        <span class="role">Designer & Web Developer</span>
+        <span class="role">UI/UX + Frontend</span>
       </div>
-    </div>
+    </button>
     <nav class="nav" id="mainNav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -51,7 +57,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <!-- Mobile hamburger -->
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -82,7 +88,7 @@
 
           <div class="hero-badge">
             <span class="badge-pulse"></span>
-            Designer &amp; Developer
+            UI/UX + Frontend
           </div>
 
           <h1 class="hero-name" id="heroName">
@@ -90,7 +96,7 @@
             <span class="name-line name-accent" data-split>Menon.</span>
           </h1>
 
-          <p class="hero-subtitle">I build websites that don't look like websites — experiences that <em>move</em>, <em>react</em>, and feel alive. Zero boring pages. That's the standard.</p>
+          <p class="hero-subtitle">I design and build interactive web experiences where <em>visual systems</em>, <em>motion</em>, and frontend craft work together.</p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#about" id="revealBtn">
@@ -102,8 +108,8 @@
 
           <div class="hero-meta">
             <div class="hero-meta-item">
-              <span class="meta-num" data-count="3" data-suffix="+">0</span>
-              <span class="meta-lbl">Projects</span>
+              <span class="meta-num" data-count="5" data-suffix="">0</span>
+              <span class="meta-lbl">Projects shipped</span>
             </div>
             <div class="hero-meta-sep"></div>
             <div class="hero-meta-item">
@@ -151,14 +157,14 @@
         <h2 class="section-title">The person<br><em>behind the code.</em></h2>
         <div class="about-layout">
           <div class="about-bio">
-            <p>I'm a designer and developer from Ernakulam, Kerala, currently in my second year at TocH Institute of Science and Technology. I'm obsessed with the details — fluid animations, pixel-perfect layouts, and interactions that feel alive and intentional.</p>
-            <p>Every project is a chance to raise the bar. I don't settle for templates. I think in motion, design in systems, and build for people who notice quality.</p>
+            <p>I'm a first-year Computer Science student from Ernakulam, Kerala, exploring the space between UI/UX design and frontend development at TocH Institute of Science and Technology.</p>
+            <p>I like turning ideas into working interfaces — paying attention to hierarchy, motion, and the small details that make an experience easier to understand. I'm still learning, but I learn by building.</p>
           </div>
           <div class="about-right">
             <div class="about-stats">
               <div class="stat-item">
-                <span class="stat-val" data-count="3" data-suffix="+">0</span>
-                <span class="stat-lbl">Projects built</span>
+                <span class="stat-val" data-count="5" data-suffix="">0</span>
+                <span class="stat-lbl">Projects shipped</span>
               </div>
               <div class="stat-item">
                 <span class="stat-val" data-count="2025">0</span>
@@ -174,10 +180,11 @@
               </div>
             </div>
             <div class="about-tag-row">
-              <span class="tag">UI Design</span>
-              <span class="tag">Animation</span>
-              <span class="tag">Frontend</span>
-              <span class="tag">Kerala</span>
+              <span class="tag">Frontend Development</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Interactive Web</span>
+              <span class="tag">Motion &amp; Animation</span>
+              <span class="tag">Creative Frontend</span>
             </div>
           </div>
         </div>
@@ -189,22 +196,24 @@
       <div class="section-inner">
         <div class="section-label">02 — Projects</div>
         <h2 class="section-title">Things I've<br><em>actually shipped.</em></h2>
+        <p class="section-intro">Selected builds across product UI, interactive frontend, computer vision, and source-grounded AI.</p>
         <div class="project-grid">
 
           <article class="project-card">
             <div class="project-card-top">
               <div class="project-icon apex-logo-wrap">
-                <img src="apex-prime-logo.webp" alt="Apex Prime" class="apex-logo">
+                <img src="apex-prime-logo.webp" alt="Apex Prime project mark" class="apex-logo" loading="lazy">
               </div>
               <div class="project-status live">Live</div>
             </div>
             <h3>Apex Prime</h3>
-            <p>A refined automotive hub designed to simplify exploration of car brands, offering a seamless gateway to official manufacturer experiences through a minimal, elegant interface.</p>
+            <div class="project-meta"><span>Product UI</span><span>HTML · CSS · JavaScript</span></div>
+            <p>A polished automotive discovery hub that makes moving from brand exploration to official manufacturer sites feel clear and effortless.</p>
             <div class="project-links">
-              <a href="https://maheendrahx.github.io/Apex-Prime/" target="_blank" class="proj-link" title="View Live Site">
-                View Live <span class="link-arrow">↗</span>
+              <a href="https://maheendrahx.github.io/Apex-Prime/" target="_blank" rel="noopener noreferrer" class="proj-link" title="View Live Site">
+                View project <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/MaheendraHX/Apex-Prime" target="_blank" class="proj-link secondary" title="View on GitHub">
+              <a href="https://github.com/MaheendraHX/Apex-Prime" target="_blank" rel="noopener noreferrer" class="proj-link secondary" title="View on GitHub">
                 GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.54-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               </a>
             </div>
@@ -213,17 +222,18 @@
           <article class="project-card">
             <div class="project-card-top">
               <div class="project-icon proj-logo-wrap gesture-logo-wrap">
-                <img src="gesture-math-logo.png" alt="Gesture Math" class="proj-logo">
+                <img src="gesture-math-logo.png" alt="Gesture Math project mark" class="proj-logo" loading="lazy">
               </div>
               <div class="project-status live">Live</div>
             </div>
             <h3>Gesture Math</h3>
-            <p>An interactive game using computer vision to track hand movements and verify math answers in real-time. Built with gesture recognition and a fun, fast UI.</p>
+            <div class="project-meta"><span>Computer Vision</span><span>JavaScript · CSS · HTML</span></div>
+            <p>A playful computer-vision math game where hand gestures become the input, designed for quick feedback and low-friction interaction.</p>
             <div class="project-links">
-              <a href="https://maheendrahx.github.io/Gesture-Math/" target="_blank" class="proj-link" title="View Live Site">
-                View Live <span class="link-arrow">↗</span>
+              <a href="https://maheendrahx.github.io/Gesture-Math/" target="_blank" rel="noopener noreferrer" class="proj-link" title="View Live Site">
+                View project <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/MaheendraHX/Math-game" target="_blank" class="proj-link secondary" title="View on GitHub">
+              <a href="https://github.com/MaheendraHX/Math-game" target="_blank" rel="noopener noreferrer" class="proj-link secondary" title="View on GitHub">
                 GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.54-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               </a>
             </div>
@@ -232,17 +242,18 @@
           <article class="project-card">
             <div class="project-card-top">
               <div class="project-icon proj-logo-wrap disaster-logo-wrap">
-                <img src="disaster-alert-app-logo.png" alt="Disaster Alert" class="proj-logo">
+                <img src="disaster-alert-app-logo.png" alt="Disaster Alert project mark" class="proj-logo" loading="lazy">
               </div>
               <div class="project-status live">Live</div>
             </div>
             <h3>Disaster Alert</h3>
-            <p>A responsive web app for real-time critical hazard alerts. Features localized safety updates, SOS mechanics, and an interface built for high-stress situations.</p>
+            <div class="project-meta"><span>Safety UX</span><span>HTML · CSS · JavaScript</span></div>
+            <p>A high-stakes alert interface for localized hazards, with SOS actions and safety information designed to stay legible under pressure.</p>
             <div class="project-links">
-              <a href="https://maheendrahx.github.io/Disaster-Alert-System/" target="_blank" class="proj-link" title="View Live Site">
-                View Live <span class="link-arrow">↗</span>
+              <a href="https://maheendrahx.github.io/Disaster-Alert-System/" target="_blank" rel="noopener noreferrer" class="proj-link" title="View Live Site">
+                View project <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/MaheendraHX/Disaster-Alert-System" target="_blank" class="proj-link secondary" title="View on GitHub">
+              <a href="https://github.com/MaheendraHX/Disaster-Alert-System" target="_blank" rel="noopener noreferrer" class="proj-link secondary" title="View on GitHub">
                 GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.54-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               </a>
             </div>
@@ -251,17 +262,18 @@
           <article class="project-card aria-card">
             <div class="project-card-top">
               <div class="project-icon proj-logo-wrap aria-logo-wrap">
-                <img src="mavis-logo.svg" alt="Mavis" class="proj-logo aria-logo">
+                <img src="mavis-logo.svg" alt="Mavis project mark" class="proj-logo aria-logo" loading="lazy">
               </div>
               <div class="project-status live">Live</div>
             </div>
             <h3>Mavis</h3>
-            <p>Mavis is a personal AI assistant with a warm personality — combining live web search, file attachments, and PC control (for private usage.Not available in Demo). Built with React, FastAPI, Groq LLM, with Google Gemeni integration and deployed on Vercel + Render.(due to backend server limimtations,a cold start of the chatbot is to be expected.)</p>
+            <div class="project-meta"><span>AI Product UI</span><span>React · FastAPI · Python</span></div>
+            <p>A personal AI assistant with web search, file attachments, and private PC controls—designed as a warm, practical interface across a full-stack build.</p>
             <div class="project-links">
-              <a href="https://aria-alpha-two.vercel.app" target="_blank" class="proj-link" title="View Live Site">
-                View Live <span class="link-arrow">↗</span>
+              <a href="https://aria-alpha-two.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-link" title="View Live Site">
+                View project <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/MaheendraHX/Mavis" target="_blank" class="proj-link secondary" title="View on GitHub">
+              <a href="https://github.com/MaheendraHX/Mavis" target="_blank" rel="noopener noreferrer" class="proj-link secondary" title="View on GitHub">
                 GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.54-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               </a>
             </div>
@@ -269,14 +281,15 @@
 
           <article class="project-card kevin-card">
             <div class="project-card-top">
-              <div class="project-icon proj-logo-wrap kevin-logo-wrap" aria-label="Kevin logo">K</div>
+              <div class="project-icon proj-logo-wrap kevin-logo-wrap" role="img" aria-label="Kevin logo">K</div>
               <div class="project-status live">Live</div>
             </div>
             <h3>Kevin</h3>
-            <p>A source-grounded AI study workspace that turns your own notes and readings into organized subjects, cited answers, summaries, recall cards, and fair practice quizzes.</p>
+            <div class="project-meta"><span>AI · Study UX</span><span>TypeScript · React · tRPC</span></div>
+            <p>A source-grounded study workspace that turns personal notes and readings into subjects, cited answers, recall cards, and practice quizzes.</p>
             <div class="project-links">
               <a href="https://maheendrahx.github.io/Kevin/" target="_blank" rel="noopener noreferrer" class="proj-link" title="View Live Site">
-                View Live <span class="link-arrow">↗</span>
+                View project <span class="link-arrow">↗</span>
               </a>
               <a href="https://github.com/MaheendraHX/Kevin" target="_blank" rel="noopener noreferrer" class="proj-link secondary" title="View on GitHub">
                 GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02-.82-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.54-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.28.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -460,7 +473,8 @@
       <div class="section-inner">
         <div class="section-label">06 — Certificates</div>
         <h2 class="section-title">Proof that I<br><em>keep learning.</em></h2>
-        <div class="certificate-grid">
+        <p class="section-intro">Supporting evidence from workshops, courses, and learning beyond the projects.</p>
+        <div class="certificate-grid compact-certificates">
 
           <article class="certificate-card">
             <a class="certificate-media" href="cert-advay26.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Software Engineering 101 certificate full size">
@@ -569,9 +583,9 @@
       <div class="section-inner">
         <div class="section-label">07 — Contact</div>
         <h2 class="section-title contact-headline">Let's build<br><em>something great.</em></h2>
-        <p class="contact-sub">Open to freelance work, internships, and collabs. Pick your way to reach me.</p>
+        <p class="contact-sub">Open to internships, freelance work, and thoughtful collaborations. If you have a good problem to explore, let's talk.</p>
         <div class="contact-grid">
-          <a href="mailto:maheendramenon@gmail.com" class="contact-card" target="_blank">
+          <a href="mailto:maheendramenon@gmail.com" class="contact-card" aria-label="Email Maheendra Menon">
             <div class="contact-icon email-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
             </div>
@@ -581,7 +595,7 @@
             </div>
             <div class="contact-arrow">→</div>
           </a>
-          <a href="tel:+919746945370" class="contact-card" target="_blank">
+          <a href="tel:+919746945370" class="contact-card" aria-label="Call Maheendra Menon">
             <div class="contact-icon phone-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
@@ -591,7 +605,7 @@
             </div>
             <div class="contact-arrow">→</div>
           </a>
-          <a href="https://www.instagram.com/x_tr_em_er/" class="contact-card" target="_blank">
+          <a href="https://www.instagram.com/x_tr_em_er/" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Visit Maheendra Menon on Instagram">
             <div class="contact-icon instagram-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
             </div>
@@ -601,7 +615,7 @@
             </div>
             <div class="contact-arrow">→</div>
           </a>
-          <a href="https://github.com/MaheendraHX" class="contact-card" target="_blank">
+          <a href="https://github.com/MaheendraHX" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Visit Maheendra Menon on GitHub">
             <div class="contact-icon github-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
             </div>
@@ -620,7 +634,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>© 2026 Maheendra Menon — Designed & built by me.</p>
+    <p>© 2026 Maheendra Menon — UI/UX, frontend, and interactive web.</p>
   </div>
 </footer>
 
@@ -632,6 +646,7 @@
      STATE
      ============================ */
   let isShowingContent = false;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const ease = 'cubic-bezier(0.16, 1, 0.3, 1)';
 
   /* ============================
@@ -675,6 +690,7 @@
   const speeds = [0.03, 0.02, 0.015];
 
   hero.addEventListener('mousemove', e => {
+    if (prefersReducedMotion) return;
     const cx = window.innerWidth / 2;
     const cy = window.innerHeight / 2;
     const dx = (e.clientX - cx);
@@ -694,6 +710,7 @@
   const imgFrame = document.getElementById('heroImageFrame');
   if (imgBox && imgFrame) {
     imgBox.addEventListener('mousemove', e => {
+      if (prefersReducedMotion) return;
       const rect = imgBox.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
@@ -701,6 +718,7 @@
         `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.03)`;
     });
     imgBox.addEventListener('mouseleave', () => {
+      if (prefersReducedMotion) return;
       imgFrame.style.transform = 'perspective(800px) rotateY(0deg) rotateX(0deg) scale(1)';
     });
   }
@@ -726,7 +744,7 @@
     const el = document.querySelector(id);
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.pageYOffset - 80;
-    window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+    window.scrollTo({ top: Math.max(top, 0), behavior: prefersReducedMotion ? 'auto' : 'smooth' });
   };
 
   /* ============================
@@ -752,6 +770,7 @@
       // Close mobile nav if open
       document.getElementById('mainNav')?.classList.remove('open');
       document.getElementById('navToggle')?.classList.remove('open');
+      document.getElementById('navToggle')?.setAttribute('aria-expanded', 'false');
       if (isShowingContent) {
         smoothToSection(href);
       } else {
@@ -763,8 +782,11 @@
 
   // Mobile nav toggle
   document.getElementById('navToggle')?.addEventListener('click', () => {
-    document.getElementById('mainNav')?.classList.toggle('open');
-    document.getElementById('navToggle')?.classList.toggle('open');
+    const nav = document.getElementById('mainNav');
+    const toggle = document.getElementById('navToggle');
+    const isOpen = nav?.classList.toggle('open') ?? false;
+    toggle?.classList.toggle('open', isOpen);
+    toggle?.setAttribute('aria-expanded', String(isOpen));
   });
 
   /* ============================
@@ -888,6 +910,7 @@
      ============================ */
   document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('mousemove', e => {
+      if (prefersReducedMotion) return;
       const r = btn.getBoundingClientRect();
       const x = e.clientX - r.left - r.width / 2;
       const y = e.clientY - r.top - r.height / 2;
