@@ -961,6 +961,14 @@ body.show-content .main-content {
   transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
   overflow: hidden;
 }
+
+.project-note {
+  margin-top: -2px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
 .project-card::before {
   content: '';
   position: absolute;
