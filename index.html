@@ -139,11 +139,6 @@
       </div>
     </div>
 
-    <!-- Scroll down indicator -->
-    <div class="scroll-indicator" aria-hidden="true">
-      <span class="scroll-indicator-text">Scroll</span>
-      <div class="scroll-indicator-line"></div>
-    </div>
 
   </section>
 
@@ -772,6 +767,7 @@
       document.getElementById('mainNav')?.classList.remove('open');
       document.getElementById('navToggle')?.classList.remove('open');
       document.getElementById('navToggle')?.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
       if (isShowingContent) {
         smoothToSection(href);
       } else {
@@ -788,20 +784,42 @@
     const isOpen = nav?.classList.toggle('open') ?? false;
     toggle?.classList.toggle('open', isOpen);
     toggle?.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('nav-open', isOpen);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const nav = document.getElementById('mainNav');
+    const toggle = document.getElementById('navToggle');
+    if (!nav?.classList.contains('open')) return;
+    nav.classList.remove('open');
+    toggle?.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+    toggle?.focus();
   });
 
   /* ============================
-     7. SCROLL-BACK UX FIX
+     7. MOBILE REVEAL + SCROLL-BACK UX
      ============================ */
+  const mobileViewport = window.matchMedia('(max-width: 720px)');
   let touchStartY = 0;
   window.addEventListener('touchstart', e => { touchStartY = e.touches[0].clientY; }, { passive: true });
   window.addEventListener('touchmove', e => {
-    if (!isShowingContent) return;
-    if (window.scrollY === 0 && (e.touches[0].clientY - touchStartY) > 100) hidePortfolio();
+    const touchDelta = e.touches[0].clientY - touchStartY;
+    if (!isShowingContent && mobileViewport.matches && touchDelta < -20) {
+      showPortfolio();
+      jumpToSection('#about');
+      return;
+    }
+    if (isShowingContent && window.scrollY === 0 && touchDelta > 100) hidePortfolio();
   }, { passive: true });
   window.addEventListener('wheel', e => {
-    if (!isShowingContent) return;
-    if (window.scrollY === 0 && e.deltaY < -50) hidePortfolio();
+    if (!isShowingContent && mobileViewport.matches && e.deltaY > 10) {
+      showPortfolio();
+      jumpToSection('#about');
+      return;
+    }
+    if (isShowingContent && window.scrollY === 0 && e.deltaY < -50) hidePortfolio();
   }, { passive: true });
 
   /* ============================
